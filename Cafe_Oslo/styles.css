@@ -1,0 +1,386 @@
+/*reset css---------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*start my code*/
+*{
+  box-sizing: border-box;
+}
+
+div{
+  overflow: hidden;
+}
+/*tttle "Recien hecho todos los días"*/
+h1{
+	color: #f5f0ed;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 44px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.2
+}
+/*Tiitles "Ven al brunch de los domingos" and "Celebra tus fiestas con nosotros"*/
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 28px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	line-height: 1.2
+}
+h3{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 44px;
+	text-transform: uppercase;
+}
+/*text body caracteristics*/
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	letter-spacing: 1.3px;
+	line-height: 1.4
+}
+/*-------------------Section1 funtionality---------------------------*/
+/*creation and positioning of the Logo*/
+.logo_oslo_cafe{
+	float: left;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+/*creation and positioning of the navegation bar*/
+.navegation{
+	float: right;
+	margin-right: 30px;
+}
+ul{
+	text-transform: uppercase;
+	overflow:hidden;
+	text-align: right;
+	padding: 0;
+	margin: 40px;
+
+}
+li{
+	float: left;
+	margin: 10px;
+
+}
+a{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+	color: #f5f0ed;
+	text-align: center;
+	padding: 16px, 16px;
+	letter-spacing: 1.3px;
+}
+/*creation of the background from section1*/
+.section1{
+	background-image: url(Imágenes/Fondo1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 700px;
+}
+.first{
+	/*background-color: lightgray;*/
+	float: left;
+	position: absolute;
+	width: 400px;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*line the separates the tittle "Recien hecho todos los días" from text box*/
+hr{
+	width: 100px;
+}
+/*text box under the tittle ""Recien hecho todos los días""*/
+.first p{
+	color: #f5f0ed;
+	text-align: center;
+}
+/*-------------------Section2 funtionality---------------------------*/
+/*make the two boxes be together in one single line - one command makes both work - common caracteristics */
+.segundo, .tercero{
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 400px;
+}
+/*Color definition*/
+.segundo{
+	background-color: #d03b40;
+	float: left;
+}
+/*make the text be in the middle*/
+.second, .third{
+	/*tells the size of the box*/
+	width: 400px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*Color definition*/
+.tercero{
+	background-color: #ded6c0;
+}
+/*definition of special caracteristics for elements */
+.segundo p, .segundo h2{
+	color: #ded6c0;
+	text-align: center;
+	margin: 10px;
+}
+.tercero p, .tercero h2{
+	color: #d03b40;
+	text-align: center;
+	margin: 10px;
+}
+/*-------------------Section3 funtionality---------------------------*/
+.section3{
+	background-image: url(Imágenes/Fondo2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 549px;
+}
+.breakfast{
+	float: left;
+	position: absolute;
+	width: 400px;
+	transform: translate(-50%, -50%);
+	margin-left: 50%;
+	margin-top: 270px;
+
+}
+.desayuno p, .desayuno h3{
+	color: #f5f0ed;
+	text-align: center;
+	margin-top: 10px;
+}
+.ghost_btn{
+	text-transform: uppercase;
+	font-weight: 200;
+	align-items: center;
+	padding: 20px;
+	width: 300px;
+	padding: 10px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #f5f0ed;
+}
+/*-------------------Section4 funtionality---------------------------*/
+/*make the elements of the sub-section be next to each other*/
+.recien-hecho, .tartas, .prueba, .ingredientes{
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 300px;
+}
+.sub-recien-hecho, .sub-tartas, .sub-prueba, .sub-ingredientes{
+	position: relative;
+	float: left;
+	margin-top: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.images{
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+.texto{
+	width: 450px
+}
+.images, .texto{
+	position: relative;
+	float: left;
+}
+/*-------------------Section5 funtionality---------------------------*/
+/*make the two boxes be together in one single line - one command makes both work - common caracteristics */
+.contact, .ubication{
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 400px;
+}
+/*Color definition*/
+.ubication{
+	background-color: #d03b40;
+}
+/*make the text be in the middle*/
+.sub-contact{
+	/*tells the size of the box*/
+	width: 400px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.sub-ubication{
+	/*tells the size of the box*/
+	width: 400px;
+	position: relative;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*Color definition*/
+.contact{
+	background-color: #ded6c0;
+}
+/*definition of special caracteristics for elements */
+.contact p, .contact h2{
+	color: #d03b40;
+	text-align: center;
+	margin: 10px;
+}
+.sub-ubication p, .sub-ubication h2{
+	color: #ded6c0;
+	text-align: center;
+	margin: 10px;
+}
+span{
+		font-weight: 800;
+}
+/*-------------------Section6 funtionality---------------------------*/
+.section6{
+	background-color: #251d1b;
+	height: 100px
+}
+.section6 p{
+	color: #f5f0ed;
+	margin-left: 30px;
+	margin-top: 40px;
+}
+/*-------------------responsive section---------------------------*/
+@media screen and (min-width:954px) and (max-width:1368px){
+	
+	.recien-hecho, .tartas, .prueba, .ingredientes{
+		height: 450px;
+	}
+	.sub-recien-hecho, .sub-tartas, .sub-prueba, .sub-ingredientes{
+		position: relative;
+		float: left;
+		margin-top: 0px;
+	}
+	.images{
+			position: relative;
+			transform: translate(-50%);
+			margin-left: 50%;
+			margin-top: 5%;
+	}
+	.texto{
+		width: 450px;
+		text-align:center;
+		position: relative;
+		transform: translate(-50%);
+		margin-left: 50%;
+	}
+}
+
+@media screen and (min-width:450px) and (max-width:953px){
+	
+	.recien-hecho, .tartas, .prueba, .ingredientes{
+		float: none;
+		width: 100%;
+		height: 400px;
+	}
+	.recien-hecho{
+		margin-top: 10px;
+	}
+	.ingredientes, .recien-hecho{
+		margin-bottom: 40px;
+	}
+	.sub-recien-hecho, .sub-tartas, .sub-prueba, .sub-ingredientes{
+		position: relative;
+		float: left;
+		margin-top: 0px;
+	}
+	.images{
+			position: relative;
+			transform: translate(-50%);
+			margin-left: 50%;
+			margin-top: 5%;
+	}
+	.texto{
+		width: 450px;
+		text-align:center;
+		position: relative;
+		transform: translate(-50%);
+		margin-left: 50%;
+	}
+	.segundo, .tercero{
+		float: none;
+		width: 100%;
+		height: 400px;
+	}
+	.contact, .ubication{
+		float: none;
+		width: 100%;
+		height: 350px;
+	}
+	.section6 p{
+		text-align: center;
+	}
+}
